@@ -4,7 +4,7 @@ import plotly.graph_objects as go
 import plotly.express as px
 from datetime import datetime, timedelta
 import json
-from supabase import create_client, Client
+#from supabase import create_client, Client
 import hashlib
 import os
 from dotenv import load_dotenv
@@ -21,7 +21,7 @@ if not SUPABASE_URL or not SUPABASE_KEY:
     st.error("Missing Supabase credentials. Set SUPABASE_URL and SUPABASE_KEY in .env")
     st.stop()
 
-supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
+#supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 
 # ============================================================================
 # PAGE CONFIG
